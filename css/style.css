@@ -1,0 +1,129 @@
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+/* MAIN DISPLAY */
+#main_display {
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+@media only screen and (max-width: 500px) {
+    #main_display {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+/* ALBUM DISPLAY */
+.album_display {
+    text-align: center;
+    padding-top: 50px;
+}
+.album_display img {
+    width: 200px;
+    height: 200px;
+}
+@media only screen and (min-width: 1000px) {
+    .album_display img {
+        width: 450px;
+        height: 450px;
+    }
+    .album_display {
+        padding-top: 25px;
+    }
+}
+.album_display h1 {
+    font-size: 20px;
+}
+.album_display h2 {
+    font-size: 15px;
+}
+/* SLIDER STYLES */
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    height: 10px;
+    margin: 13px 0;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fdfdfd;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    cursor: pointer;
+}
+/* PROGRESS SLIDER */
+.progress_slider {
+    display: flex;
+    justify-content: center;
+}
+.audio_sec {
+    margin: 10px;
+}
+/* BUTTON SET1 */
+.button_set1 {
+    text-align: center;
+}
+/* BUTTON SET2 */
+.button_set2 {
+    text-align: center;
+}
+/* BUTTON STYLES */
+.button_style {
+    margin: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+/* VOLUME SLIDER */
+.volume_slider {
+    text-align: center;
+    margin: 5px 0;
+}
+/* LYRICS UI */
+.lyric_button {
+    text-align: center;
+}
+#lyric_button {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+#lyricslist_container p {
+    text-align: center;
+}
+#lyricslist_container p {
+    color: black;
+}
+/* PLAYLIST */
+#playlist_container {
+    text-align: center;
+}
+#playlist_container ol {
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+#playlist_container img {
+    width: 100px;
+    height: 100px;
+}
+@media only screen and (min-width: 1000px) {
+    #playlist_container ol {
+        display: flex;
+        justify-content: space-around;
+    }
+}
